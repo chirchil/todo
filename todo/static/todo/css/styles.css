@@ -1,0 +1,147 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 25px;
+}
+input {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 25px;
+  width: 200px;
+}
+
+.menu {
+  height: 100px;
+  display: grid;  
+  grid-template-columns:  1fr 1fr 1fr;
+}
+
+
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #f76707;
+  border-color: black;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.tab_selected {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #f76707;
+  background-color: #facb8e;
+  border-color: black;
+  border-radius: 10px 10px 0px 0px;
+}
+
+
+.workspace {
+  margin: auto 20%;
+  background-color: #fff4e6;
+  border-color: black;
+}
+
+.tasks {
+  /* border: 2px solid #f76707; */
+  border-top: 0;
+  border-color: black;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.task {
+  display: grid;  
+  grid-template-columns:  6fr 2fr;
+
+  border: 1px solid #000000;
+  position: relative;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  width: calc(100%-2px);
+  margin: 0 auto;
+}
+
+.counter {
+  position: relative;
+  bottom: 20px;
+}
+
+.done_task {
+  display: grid;  
+  grid-template-columns:  6fr 2fr;
+
+  border: 1px solid #000000;
+  position: relative;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  opacity: .3;
+  font-style: italic;
+  width: calc(100%-2px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.task input {
+  box-shadow: none;
+  border: 0px;
+}
+.done_task input {
+  box-shadow: none;
+  border: 0px;
+}
+
+.done {
+  margin: 10px;
+  display:inline-block;
+  position: relative;
+}
+.edit {
+  margin: 10px;
+  display:inline-block;
+  position: relative;
+}
+.del {
+  margin: 10px;
+  display:inline-block;
+  position: relative;
+  margin-left: 20px;
+}
+input {
+  background-color: #fff4e6;
+  font-family: inherit;
+  line-height: 1.5;
+  border-radius: 0.25rem
+}
+
+.add_task {
+  padding-right: 20px;
+  padding-left: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  height: 50px;
+}
+.enter_task {
+  display: inline-flex;
+  align-items: center;
+  position:relative;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
+
+}
+.add_icon {
+  padding-right: 20px;
+  padding-left: 20px;
+    margin: 30px;
+  display: inline-flex;
+  align-items: center;
+  border: 0;
+  background: transparent;
+  position:relative;
+  margin: 0 auto
+}
