@@ -1,0 +1,47 @@
+<!-- {% load static %} -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Проект</title>
+    <link
+      href="{% static 'todo/css/styles.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- <link href="styles/style.css" rel="stylesheet" type="text/css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="add_task">
+      <p class="enter_task">Введите задачу:</p>
+      <input type="text" id="newtask_title"/>
+      <button class="add_icon"  onclick={todo._newTask()}>
+        <img
+          src="{% static 'todo/images/add_icon.png' %}"
+          style="width: 30px; height: 30px"
+        />
+      </button>
+    </div>
+    <div class='counter' id="tasks_count">
+    </div>
+    <div class="workspace">
+      <div class="menu" id="filter_tabs">
+      </div>
+      <div class="tasks" id="tasks_list">
+      </div>
+    </div>
+    <script
+      src="{% static 'todo/js/index.js' %}"
+      asp-append-version="true"
+    ></script>
+    <script type="text/javascript">
+      let todo = new ToDo();
+    </script>
+  </body>
+</html>
